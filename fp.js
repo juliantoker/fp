@@ -45,9 +45,9 @@ const generateBrowserFingerprint = () => {
         navigatorMimeTypes: navigator.mimeTypes
     };
     console.log(fingerprint);
-    let ta = document.createElement("textarea");
+    let ta = document.getElementById("display");
     ta.innerHTML = JSON.stringify(fingerprint);
-    ta.style = "width: 500px; height: 1000px;"
+    ta.style = "width: 100vw; height: 1000px;"
     document.body.append(ta);
     return fingerprint;
 }
