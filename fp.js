@@ -1,5 +1,4 @@
 const generateBrowserFingerprint = () => {
-    console.log("SHIT");
     let fingerprint = {
         userAgent: navigator.userAgent,
         appVersion: navigator.appVersion,
